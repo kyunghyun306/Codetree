@@ -7,7 +7,7 @@ int main() {
 
     while(true){
         n /= ++cnt;
-        if(n <= 0){
+        if(n <= 1){
             cout << cnt;
             break;
         }
