@@ -8,7 +8,7 @@ int main() {
 
     cin >> a >> b;
 
-    while(a > 0){
+    while(a > 1){
         arr[a % b]++;
         a /= b;
     }
