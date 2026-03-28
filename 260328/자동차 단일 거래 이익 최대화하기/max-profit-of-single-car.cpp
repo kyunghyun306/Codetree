@@ -14,8 +14,11 @@ int main() {
     int result = 0;
 
     for(int i = n - 2; i >= 0; i--){
-        if(arr[i] < s && s - arr[i] > result) result = s - arr[i];
-        else s = arr[i];
+        if(arr[i] < s){
+            if(s - arr[i] > result) result = s - arr[i];
+        }else{
+            s = arr[i]; 
+        } 
     }
 
     cout << result;
